@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.ufscar.dc.medtime"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="br.ufscar.dc.medtime.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.ufscar.dc.medtime.CadastroActivity"
+            android:label="@string/title_activity_cadastro" >
+        </activity>
+        <activity
+            android:name="br.ufscar.dc.medtime.AdminUserActivity"
+            android:label="@string/gerenciarUsuario" >
+        </activity>
+        <activity
+            android:name="br.ufscar.dc.medtime.UsuarioActivity"
+            android:label="@string/title_activity_usuario" >
+        </activity>
+        <activity
+            android:name="br.ufscar.dc.medtime.PerfilActivity"
+            android:label="@string/title_activity_perfil" >
+        </activity>
+        <activity
+            android:name="br.ufscar.dc.medtime.ProdutosActivity"
+            android:label="@string/title_activity_produtos" >
+        </activity>
+        <activity
+            android:name="br.ufscar.dc.medtime.UsuariosActivity"
+            android:label="@string/title_activity_usuarios" >
+        </activity>
+        <activity
+            android:name="br.ufscar.dc.medtime.ListUsuarioActivity"
+            android:label="@string/title_activity_list_usuario" >
+        </activity>
+        <activity
+            android:name="br.ufscar.dc.medtime.AdminSelectActivity"
+            android:label="@string/title_activity_admin_select" >
+        </activity>
+        <activity
+            android:name="br.ufscar.dc.medtime.AdminMedicamentoActivity"
+            android:label="@string/gerenciarMedicamento" >
+        </activity>
+        <activity
+            android:name="br.ufscar.dc.medtime.CadastrarMedicamento"
+            android:label="@string/title_activity_cadastrar_medicamento" >
+        </activity>
+        <activity
+            android:name="br.ufscar.dc.medtime.CadastrarMedicamentoActivity"
+            android:label="@string/title_activity_cadastrar_medicamento" >
+        </activity>
+    </application>
+
+</manifest>

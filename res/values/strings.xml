@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">medTime</string>
+    <string name="action_settings">Opções</string>
+    <string name="cadastro">Cadastro de Usuários</string>
+    <string name="bemVindo">Uow, it\'s medTime!</string>
+    <string name="login">CPF:</string>
+    <string name="title_activity_cadastro">Cadastro de Usuários</string>
+    <string name="nome">Nome: </string>
+    <string name="senha">Senha: </string>
+    <string name="matricula">CPF: </string>
+    <string name="sexo">Sexo: </string>
+    <string name="radio_fem">Feminino</string>
+    <string name="radio_masc">Masculino</string>
+    <string name="radio_paciente">Paciente</string>
+    <string name="radio_medico">Médico</string>
+    <string name="funcao">Função: </string>
+    <string name="rua">Rua: </string>
+    <string name="bairro">Bairro: </string>
+    <string name="numero">Número: </string>
+    <string name="cidade">Cidade: </string>
+    <string name="estado">Estado: </string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="Logar">Entrar</string>
+    <string name="Idade">Idade</string>
+    <string name="title_activity_admin">medTime</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_usuario">Area Usuário</string>
+    <string name="bemVindoLogado">Seja Bem Vindo(a)</string>
+    <string name="cadastroUsuario">Cadastrar Usuário</string>
+    <string name="cadastroProdutos">Cadastrar Medicamento</string>           
+    <string name="meuPerfil">Meu Perfil</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="password">Senha</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="administrador">Administrador</string>
+    <string name="title_activity_perfil">Meu Perfil</string>
+    <string name="alterar">Alterar</string>
+    <string name="voltar">Voltar</string>
+    <string name="sair">Sair</string>
+    <string name="title_activity_produtos">Cadastro de Medicamento</string>
+    <string name="nomeprodutos">Nome: </string>
+    <string name="valorProduto">Valor: </string>
+    <string name="codigoprodutos">Codigo: </string>
+    <string name="excluir">Excluir</string>
+    <string name="listarUsuario">Listar Usuários</string>
+    <string name="title_activity_usuarios">UsuariosActivity</string>
+    <string name="escolhaEdicao">Clique no usuário para alterar password</string>
+    <string name="title_activity_dialog">Alterar senha</string>
+    <string name="novaSenha">Entre com a nova senha: </string>
+    <string name="confirmar_senha">Confirmação Senha: </string>
+    <string name="confirmar">Confirmar</string>
+    <string name="title_activity_list_usuario">Usuários ativos</string>
+    <string name="editar_senha">Editar Senha</string>    
+    <string name="produto">Medicamento:</string>
+    <string name="valor">Valor: </string>      
+    
+
+</resources>

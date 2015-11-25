@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/cristian/Workspace/AndroidStudioProjects/medtime-master/app/src/main/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="categoriaRemedio">
+        <item>Analgésico</item>
+        <item>Antidepressivo</item>
+        <item>Antialérgico</item>
+        <item>Antibiótico</item>
+        <item>Antifúngico</item>
+    </string-array>
+    <!-- From: file:/home/cristian/Workspace/AndroidStudioProjects/medtime-master/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/home/cristian/Workspace/AndroidStudioProjects/medtime-master/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="Idade">Idade</string>
+    <string name="Logar">Entrar</string>
+    <string name="action_settings">Opções</string>
+    <string name="administrador">Administrador</string>
+    <string name="alterar">Alterar</string>
+    <string name="app_name">medTime</string>
+    <string name="bairro">Bairro: </string>
+    <string name="bemVindo">Uow, it\'s medTime!</string>
+    <string name="bemVindoLogado">Seja Bem Vindo(a)</string>
+    <string name="btnEmergenciaHome">Discar Número Emergência</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="cadastrarMedicamento">Cadastrar Medicamento</string>
+    <string name="cadastro">Cadastro de Usuários</string>
+    <string name="cadastroProdutos">Cadastrar Medicamento</string>
+    <string name="cadastroUsuario">Cadastrar Usuário</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="cidade">Cidade: </string>
+    <string name="codigoprodutos">Codigo: </string>
+    <string name="confirmar">Confirmar</string>
+    <string name="confirmar_senha">Confirmação Senha: </string>
+    <string name="editar_senha">Editar Senha</string>
+    <string name="escolhaEdicao">Clique no usuário para alterar password</string>
+    <string name="estado">Estado: </string>
+    <string name="excluir">Excluir</string>
+    <string name="funcao">Função: </string>
+    <string name="gerenciarAlarme">Gerenciar Alarme </string>
+    <string name="gerenciarMedicamento">Gerenciar Medicamento </string>
+    <string name="gerenciarUsuario">Gerenciar Usuário </string>
+    <string name="gerenciar_opcao">Selecionar Opção </string>
+    <string name="hello_world">Hello world!</string>
+    <string name="listarUsuario">Listar Usuários</string>
+    <string name="login">CPF:</string>
+    <string name="matricula">CPF: </string>
+    <string name="meuPerfil">Meu Perfil</string>
+    <string name="nao">Não</string>
+    <string name="nome">Nome: </string>
+    <string name="nomeLaboratorio">Nome do Laboratório</string>
+    <string name="nomeMedicamento">Nome do Medicamento </string>
+    <string name="nomeprodutos">Nome: </string>
+    <string name="novaSenha">Entre com a nova senha: </string>
+    <string name="numEmergencia">Número de emergência </string>
+    <string name="numero">Número: </string>
+    <string name="password">Senha</string>
+    <string name="produto">Medicamento:</string>
+    <string name="radio_fem">Feminino</string>
+    <string name="radio_masc">Masculino</string>
+    <string name="radio_medico">Médico</string>
+    <string name="radio_paciente">Paciente</string>
+    <string name="rua">Rua: </string>
+    <string name="sair">Sair</string>
+    <string name="senha">Senha: </string>
+    <string name="sexo">Sexo: </string>
+    <string name="sim">Sim</string>
+    <string name="title_activity_admin">medTime</string>
+    <string name="title_activity_admin_select">MedTime - Menu</string>
+    <string name="title_activity_cadastrar_medicamento">Cadastrar Medicamento</string>
+    <string name="title_activity_cadastro">Cadastro de Usuários</string>
+    <string name="title_activity_dialog">Alterar senha</string>
+    <string name="title_activity_list_usuario">Usuários ativos</string>
+    <string name="title_activity_perfil">Meu Perfil</string>
+    <string name="title_activity_produtos">Cadastro de Medicamento</string>
+    <string name="title_activity_usuario">Area Usuário</string>
+    <string name="title_activity_usuarios">UsuariosActivity</string>
+    <string name="valor">Valor: </string>
+    <string name="valorRemedio">Valor: </string>
+    <string name="voltar">Voltar</string>
+    <!-- From: file:/home/cristian/Workspace/AndroidStudioProjects/medtime-master/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>
