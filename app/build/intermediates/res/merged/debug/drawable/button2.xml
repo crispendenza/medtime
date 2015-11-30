@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" >
+        <shape android:shape="rectangle"  >
+            <corners android:radius="3dip" />
+            <stroke android:width="1dip" android:color="#f4dc0b" />
+            <gradient android:angle="-90" android:startColor="#f4dc0b" android:endColor="#f4dc0b"  />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:shape="rectangle"  >
+            <corners android:radius="3dip" />
+            <stroke android:width="1dip" android:color="#f4dc0b" />
+            <solid android:color="#f4dc0b"/>
+        </shape>
+    </item>
+    <item >
+        <shape android:shape="rectangle"  >
+            <corners android:radius="3dip" />
+            <stroke android:width="1dip" android:color="#f4dc0b" />
+            <gradient android:angle="-90" android:startColor="#fff871" android:endColor="#f4dc0b" />
+        </shape>
+    </item>
+</selector><!-- From: file:/home/cristian/Workspace/android-studio/medtime-master/app/src/main/res/drawable/button2.xml -->

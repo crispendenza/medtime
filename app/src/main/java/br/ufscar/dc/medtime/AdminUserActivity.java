@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class AdminUserActivity extends Activity {
 
@@ -20,6 +21,7 @@ public class AdminUserActivity extends Activity {
     private Button btnVoltar;
     private Bundle params;
     private Button btnListarUsuario;
+    private TextView tvNome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,9 @@ public class AdminUserActivity extends Activity {
         setContentView(R.layout.activity_admin_user);
         Intent intent = getIntent();
         params = intent.getExtras();
+        tvNome = (TextView) findViewById(R.id.tvWelcomeGerenciar);
+        tvNome.setText("Olá " + params.getString("nome"));
+
         this.imgAvatar = (ImageView) findViewById(R.id.imageAvatar);
         if (params != null) {
             escolherAvatar(params.getString("sexo"));
@@ -36,6 +41,7 @@ public class AdminUserActivity extends Activity {
         btnCadastrarUsuario.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(AdminUserActivity.this, CadastroActivity.class);
+                intent.putExtras(params);
                 startActivity(intent);
             }
         });
@@ -50,7 +56,10 @@ public class AdminUserActivity extends Activity {
 
         btnVoltar = (Button) findViewById(R.id.btnSair);
         btnVoltar.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) { finish(); }});
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
     }
 
@@ -67,12 +76,6 @@ public class AdminUserActivity extends Activity {
         }
     }
 
-    public Bundle retornarParametros() {
-        Bundle params1 = new Bundle();
-        params1.putString("matricula", params.getString("matricula"));
-        params1.putString("nome", params.getString("nome"));
-        return params1;
-    }
 
 
 }

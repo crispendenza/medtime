@@ -37,7 +37,7 @@
                     android:src="@drawable/feminino" />
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/tvWelcomeMed"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/bemVindoLogado" />
@@ -48,28 +48,33 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="@string/cadastrarMedicamento" />
-
-<!--            <Button
-                android:id="@+id/btnGerenciarMedicamento"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/gerenciarMedicamento" />-->
+                android:text="@string/cadastrarMedicamento"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button1"
+                android:layout_marginBottom="5dp"
+                android:textColor="#ffffff" />
 
             <Button
-                android:id="@+id/btnGerenciarAlarme"
+                android:id="@+id/btnMeusMedicamentos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/gerenciarAlarme" />
+                android:layout_gravity="center_horizontal"
+                android:text="@string/meusMedicamentos"
+                android:background="@drawable/button1"
+                android:layout_marginBottom="5dp"
+                android:textColor="#ffffff" />
 
             <Button
                 android:id="@+id/btnVoltar"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/voltar" />
+                android:text="@string/voltar"
+                android:background="@drawable/button3"
+                android:layout_marginBottom="5dp"
+                android:textColor="#ffffff" />
         </LinearLayout>
     </ScrollView>
 
 
 </RelativeLayout>
-<!-- From: file:/home/cristian/Workspace/AndroidStudioProjects/medtime-master/app/src/main/res/layout/activity_admin_medicamento.xml -->
+<!-- From: file:/home/cristian/Workspace/android-studio/medtime-master/app/src/main/res/layout/activity_admin_medicamento.xml -->

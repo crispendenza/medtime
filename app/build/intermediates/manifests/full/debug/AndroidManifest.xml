@@ -12,6 +12,7 @@
     <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
@@ -71,6 +72,14 @@
         <activity
             android:name="br.ufscar.dc.medtime.CadastrarMedicamentoActivity"
             android:label="@string/title_activity_cadastrar_medicamento" >
+        </activity>
+        <activity
+            android:name="br.ufscar.dc.medtime.MeusMedicamentosActivity"
+            android:label="@string/title_activity_meus_medicamentos"
+            android:parentActivityName="br.ufscar.dc.medtime.AdminMedicamentoActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.ufscar.dc.medtime.AdminMedicamentoActivity" />
         </activity>
     </application>
 

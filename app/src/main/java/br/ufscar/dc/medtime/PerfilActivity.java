@@ -23,7 +23,7 @@ import br.ufscar.dc.medtime.model.Usuario;
 
 public class PerfilActivity extends Activity {
 	private Button btnAlterar;
-	//private Button btnVoltar;
+	private Button btnVoltar;
 	private TextView tvNome;
 	private TextView tvFuncao;
 	private TextView tvMatricula;
@@ -70,7 +70,9 @@ public class PerfilActivity extends Activity {
 				}
 			}
 		});
-
+		btnVoltar = (Button) findViewById(R.id.btnVoltarPerfil);
+		btnVoltar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) { finish(); }});
 	}
 
 	@Override
@@ -109,7 +111,6 @@ public class PerfilActivity extends Activity {
 		this.edtEstado = (EditText) findViewById(R.id.edtEstadoAlterar);
 		this.edtNumero = (EditText) findViewById(R.id.edtNumeroAlterar);
 		this.edtNumEmergencia = (EditText) findViewById(R.id.edtNumEmergenciaAlterar);
-
 		this.img = (ImageView) findViewById(R.id.imageAvatar);
 
 	}

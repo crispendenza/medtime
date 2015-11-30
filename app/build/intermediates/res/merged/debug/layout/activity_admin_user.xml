@@ -34,7 +34,7 @@
                     android:src="@drawable/feminino" />
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/tvWelcomeGerenciar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/bemVindoLogado" />
@@ -44,21 +44,30 @@
                 android:id="@+id/btnCadastroUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/cadastroUsuario" />
+                android:text="@string/cadastroUsuario"
+                android:background="@drawable/button1"
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff" />
 
             <Button
                 android:id="@+id/btnListarUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/listarUsuario" />
+                android:text="@string/listarUsuario"
+                android:background="@drawable/button1"
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff" />
 
 
             <Button
                 android:id="@+id/btnSair"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/voltar" />
+                android:text="@string/voltar"
+                android:background="@drawable/button3"
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff" />
         </LinearLayout>
     </ScrollView>
 
-</LinearLayout><!-- From: file:/home/cristian/Workspace/AndroidStudioProjects/medtime-master/app/src/main/res/layout/activity_admin_user.xml -->
+</LinearLayout><!-- From: file:/home/cristian/Workspace/android-studio/medtime-master/app/src/main/res/layout/activity_admin_user.xml -->

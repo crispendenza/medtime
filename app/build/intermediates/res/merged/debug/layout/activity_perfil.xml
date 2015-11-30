@@ -21,7 +21,7 @@
             android:gravity="center"
             android:orientation="vertical" >
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center|top" >
@@ -30,15 +30,16 @@
                     android:id="@+id/tVNome"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/hello_world" />
+                    android:text="@string/hello_world"/>
 
                 <ImageView
                     android:id="@+id/imageAvatar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/feminino" />
+                    android:src="@drawable/feminino"
+                    android:layout_marginTop="10dp"/>
 
-            </LinearLayout>
+            </RelativeLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -190,13 +191,30 @@
 
         </LinearLayout>
     </ScrollView>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+        <Button
+            android:id="@+id/btnAlterar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alterar"
+            android:background="@drawable/button1"
+            android:layout_marginBottom="5dp"
+            android:textColor="#ffffff"/>
 
-    <Button
-        android:id="@+id/btnAlterar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/alterar"
-        android:layout_gravity="center_horizontal" />
+        <Button
+            android:id="@+id/btnVoltarPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/voltar"
+            android:background="@drawable/button3"
+            android:layout_marginBottom="5dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
 
 </LinearLayout>
-<!-- From: file:/home/cristian/Workspace/AndroidStudioProjects/medtime-master/app/src/main/res/layout/activity_perfil.xml -->
+<!-- From: file:/home/cristian/Workspace/android-studio/medtime-master/app/src/main/res/layout/activity_perfil.xml -->

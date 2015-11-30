@@ -87,7 +87,7 @@
 
             </LinearLayout>
 
-            <LinearLayout
+            <!--<LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" >
 
@@ -117,7 +117,7 @@
 
                     </RadioGroup>
 
-            </LinearLayout>
+            </LinearLayout>-->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -273,23 +273,27 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center|top"
-                android:layout_alignParentBottom="true">
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <Button
                     android:id="@+id/btnCadastrarUusuario"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/cadastrar" />
+                    android:text="@string/cadastrar"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button2"/>
 
                 <Button
                     android:id="@+id/btnCancelar"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Cancelar"/>
+                    android:text="Cancelar"
+                    android:background="@drawable/button3"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#ffffff" />
             </LinearLayout>
 
         </LinearLayout>

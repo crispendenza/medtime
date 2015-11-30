@@ -38,22 +38,38 @@ public class CadastroActivity extends Activity {
 	private Usuario user;
 	private AlertDialog.Builder alert;
 	private Context context;
+	private Bundle params;
+
 
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_cadastro);
-		context = this; 
+		context = this;
+		Intent intent = getIntent();
+		params = intent.getExtras();
+		final Boolean novo = Boolean.parseBoolean(intent.getStringExtra("novo"));
 		btnCadastrar = (Button)findViewById(R.id.btnCadastrarUusuario);
 		        btnCadastrar.setOnClickListener(new View.OnClickListener() {   
 			        public void onClick(View v) { 
 			        	try {
-			        		
 							salvar();
 							Toast.makeText(getApplicationContext(), "Cadastro realizado com sucesso!", Toast.LENGTH_SHORT).show();
-							Intent intent = new Intent(CadastroActivity.this,AdminUserActivity.class);
-	        				startActivity(intent);
+							if (!novo) {
+								Intent intent = new Intent(CadastroActivity.this, AdminUserActivity.class);
+								intent.putExtras(params);
+								startActivity(intent);
+							}
+							else {
+								Intent intent = new Intent(CadastroActivity.this, AdminSelectActivity.class);
+								Bundle params_ = new Bundle();
+								params_.putString("matricula", user.getMatricula());
+								params_.putString("nome", user.getNome());
+								params_.putString("sexo", user.getSexo());
+								intent.putExtras(params_);
+								startActivity(intent);
+							}
 							
 						} catch (SQLException e) {
 							exibeDialogo("Falha no Cadastro Verifique os Campos!"); 
@@ -89,7 +105,7 @@ public class CadastroActivity extends Activity {
 		carregarDados();
 		user.setMatricula(edtMatricula.getText().toString());
 		user.setNome(edtNome.getText().toString());
-		user.setFuncao(edtFuncao.getContext().toString());
+		//user.setFuncao(edtFuncao.getContext().toString());
 		user.setRua(edtRua.getText().toString());
 		user.setBairro(edtBairro.getText().toString());
 		user.setNum(Integer.parseInt(edtNumero.getText().toString()));
@@ -111,15 +127,15 @@ public class CadastroActivity extends Activity {
 		Log.i("CarregaDados", "Carregando Dados");
 		this.edtMatricula = (EditText) findViewById(R.id.edtMatricula);
 		this.edtNome = (EditText) findViewById(R.id.edtNome);
-		this.edtFuncao = (RadioGroup) findViewById(R.id.radioFuncao);		
+/*				this.edtFuncao = (RadioGroup) findViewById(R.id.radioFuncao);
 		switch (edtFuncao.getCheckedRadioButtonId()){
 		case R.id.radioMedico:
 			user.setFuncao("Medico");
 			break;
 		case R.id.radioPaciente:
 			user.setFuncao("Paciente");
-			break;		
-		}
+			break;
+		}*/
 		
 		this.sexo = (RadioGroup) findViewById(R.id.radioSex);
 		switch (sexo.getCheckedRadioButtonId()) {
@@ -139,7 +155,8 @@ public class CadastroActivity extends Activity {
 		this.edtNumero = (EditText) findViewById(R.id.edtNum);		
 		this.edtPassword = (EditText) findViewById(R.id.edtPassword);
 		this.edtNumEmergencia = (EditText) findViewById(R.id.edtNumEmergencia);
-		this.user.setAdmin("true"); 
+		this.user.setAdmin("true");
+		this.user.setFuncao("Paciente");
 
 	}
 

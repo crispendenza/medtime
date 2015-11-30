@@ -10,63 +10,65 @@ import br.ufscar.dc.medtime.DAO.MedicamentoDAO;
 import br.ufscar.dc.medtime.model.Medicamento;
 
 public class MedicamentoControle {
-	private static MedicamentoDAO produtoDAO;
+	private static MedicamentoDAO medicamentoDAO;
 	private static MedicamentoControle instance;
-	private Medicamento produto;
+	private Medicamento medicamento;
 	
-	private MedicamentoControle(){
-	}
-
 	public static MedicamentoControle getInstance(Context context) {
 		if (instance == null) {
 			instance = new MedicamentoControle();
-			produtoDAO = new MedicamentoDAO(context);
-			Log.d("PDM", "produtoDAO (createInstance):" + produtoDAO);
+			medicamentoDAO = new MedicamentoDAO(context);
 		}
-		Log.d("PDM", "produtoDAO:" + produtoDAO);
 		return instance;
 	}
 
-	public void insert(Medicamento produto) throws Exception {
-		produtoDAO.insert(produto);
-
+	public void insert(Medicamento medicamento) throws Exception {
+		Log.i("PDMInsert","Inserindo medicamento");
+		medicamentoDAO.insert(medicamento);
 	}
 
-	public void update(Medicamento produto) throws Exception {
-		produtoDAO.update(produto);
+	public void update(Medicamento medicamento) throws Exception {
+		medicamentoDAO.update(medicamento);
 	}
 
-	public void findByid(String id) throws Exception {
-		this.produto = produtoDAO.findByCodigo(id);
+	public void findByid(int id) throws Exception {
+		this.medicamento = medicamentoDAO.findById(id);
 	}
-	public ArrayList<String> find() throws Exception {
-		return produtoDAO.findCodigo();
+
+	public ArrayList<Integer> find() throws Exception {
+		return medicamentoDAO.find();
 	}
 
 	public ArrayList<Medicamento> findAll() throws Exception {
-		return produtoDAO.findAll();
+		return medicamentoDAO.findAll();
 	}
 
-	public static MedicamentoDAO getProdutoDAO() {
-		return produtoDAO;
+	public static MedicamentoDAO getMedicamentoDAO() {
+		return medicamentoDAO;
 	}
 
-	public static void setProdutoDAO(MedicamentoDAO produtoDAO) {
-		MedicamentoControle.produtoDAO = produtoDAO;
+	public static void setMedicamentoDAO(MedicamentoDAO medicamentoDAO) {
+		MedicamentoControle.medicamentoDAO = medicamentoDAO;
 	}
 
+	public Medicamento getMedicamento() {
+		return medicamento;
+	}
+
+	public void setMedicamento(Medicamento medicamento) {
+		this.medicamento = medicamento;
+	}
+
+	public static MedicamentoControle getInstance() {
+		return instance;
+	}
 
 	public static void setInstance(MedicamentoControle instance) {
 		MedicamentoControle.instance = instance;
 	}
 
-	public Medicamento getProduto() {
-		return produto;
-	}
+	public void updatePassword(Medicamento medicamento) throws Exception {
+		medicamentoDAO.updatePasswd(medicamento);
 
-	public void setProduto(Medicamento produto) {
-		this.produto = produto;
 	}
-	
-
 }

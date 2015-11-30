@@ -24,10 +24,7 @@ public class UsuarioControle {
 
 	public void insert(Usuario usuario) throws Exception {
 		Log.i("PDMInsert","Inserindo usuario");
-		//Log.i("Dados", usuario.toString());
-		
 		usuarioDAO.insert(usuario);
-		
 	}
 
 	public void update(Usuario usuario) throws Exception {
@@ -46,7 +43,7 @@ public class UsuarioControle {
 	public boolean validaLogin(String matricula, String senha) throws Exception {
 
 		this.user = usuarioDAO.findByLogin(matricula, senha);
-		Log.i("Valida", "Estou testando");
+		Log.i("DAO", "Valida");
 		if (user == null || user.getMatricula() == null
 				|| user.getSenha() == null) {
 			return false;

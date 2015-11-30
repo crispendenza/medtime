@@ -19,7 +19,6 @@ public class UsuarioDAO extends DataBase {
 
 	public void insert(Usuario usuario) throws Exception {
 		ContentValues values = new ContentValues();
-
 		values.put("nome", usuario.getNome());
 		values.put("senha", usuario.getSenha());
 		values.put("matricula", usuario.getMatricula());
@@ -34,34 +33,29 @@ public class UsuarioDAO extends DataBase {
 		values.put("sexo", usuario.getSexo());
 		values.put("senha", usuario.getSenha());
 		values.put("numEmergencia", usuario.getNumEmergencia());
-
 		getDatabase().insert(TABLE, null, values);
 	}
 
 	public void update(Usuario usuario) throws Exception {
 		ContentValues values = new ContentValues();
-
 		values.put("rua", usuario.getRua());
 		values.put("bairro", usuario.getBairro());
 		values.put("numero", usuario.getNum());
 		values.put("cidade", usuario.getCidade());
 		values.put("estado", usuario.getEstado());
 		values.put("numEmergencia", usuario.getNumEmergencia());
-
 		getDatabase().update(TABLE, values, "matricula = ?",
 				new String[] { "" + usuario.getMatricula() });
 	}
-
+	//ok
 	public Usuario findById(String matricula) {
-
 		String sql = "SELECT * FROM " + TABLE + " WHERE matricula = ?";
 		String[] selectionArgs = new String[] { "" + matricula };
 		Cursor cursor = getDatabase().rawQuery(sql, selectionArgs);
 		cursor.moveToFirst();
-
 		return montaUsuario(cursor);
 	}
-
+	//ok
 	public ArrayList<Usuario> findAll() throws Exception {
 		ArrayList<Usuario> retorno = new ArrayList<Usuario>();
 		String sql = "SELECT * FROM " + TABLE;
@@ -93,9 +87,7 @@ public class UsuarioDAO extends DataBase {
 		usuario.setAdmin(cursor.getString(cursor.getColumnIndex("admin")));
 		usuario.setSenha(cursor.getString(cursor.getColumnIndex("senha")));
 		usuario.setNumEmergencia(cursor.getString(cursor.getColumnIndex("numEmergencia")));
-
 		return usuario;
-
 	}
 
 	public Usuario findByLogin(String matricula, String senha) {
@@ -104,9 +96,9 @@ public class UsuarioDAO extends DataBase {
 		String[] selectionArgs = new String[] { matricula, senha };
 		Cursor cursor = getDatabase().rawQuery(sql, selectionArgs);
 		cursor.moveToFirst();
-
 		return montaUsuario(cursor);
 	}
+
 	public void updatePasswd(Usuario usuario) throws Exception {
 		ContentValues values = new ContentValues();
 

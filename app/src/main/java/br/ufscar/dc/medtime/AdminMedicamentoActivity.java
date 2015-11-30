@@ -11,23 +11,31 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class AdminMedicamentoActivity extends Activity {
 
 
     private ImageView imgAvatar;
-    private Button btnGerenciarAlarme;
+
     private Button btnCadastrarMedicamento;
+    private Button btnMeusMedicamentos;
     private Button btnVoltar;
-    private Button btnGerenciarMedicamento;
     private Bundle params;
+    private TextView tvNome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_medicamento);
-        Intent intent = getIntent();
-        params = intent.getExtras();
+        try{
+            Intent intent = getIntent();
+            params = intent.getExtras();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        tvNome = (TextView) findViewById(R.id.tvWelcomeMed);
+        tvNome.setText("Olá " + params.getString("nome"));
         this.imgAvatar = (ImageView) findViewById(R.id.imageAvatar);
         if (params != null) {
             escolherAvatar(params.getString("sexo"));
@@ -36,24 +44,27 @@ public class AdminMedicamentoActivity extends Activity {
         btnCadastrarMedicamento.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(AdminMedicamentoActivity.this, CadastrarMedicamentoActivity.class);
+                intent.putExtras(params);
                 startActivity(intent);
             }
         });
 
-
-        btnGerenciarAlarme = (Button) findViewById(R.id.btnGerenciarAlarme);
-        btnGerenciarAlarme.setOnClickListener(new View.OnClickListener() {
+        btnMeusMedicamentos = (Button) findViewById(R.id.btnMeusMedicamentos);
+        btnMeusMedicamentos.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(AdminMedicamentoActivity.this, AdminSelectActivity.class);
+                Intent intent = new Intent(AdminMedicamentoActivity.this, MeusMedicamentosActivity.class);
+                intent.putExtras(params);
+                //intent.putExtra("user_id", params.getString("matricula"));
                 startActivity(intent);
             }
         });
-
 
         btnVoltar = (Button) findViewById(R.id.btnVoltar);
         btnVoltar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                finish();
+                Intent intent = new Intent(AdminMedicamentoActivity.this, AdminSelectActivity.class);
+                intent.putExtras(params);
+                startActivity(intent);
             }
         });
 

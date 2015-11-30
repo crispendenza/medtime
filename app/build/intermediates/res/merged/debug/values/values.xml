@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/home/cristian/Workspace/AndroidStudioProjects/medtime-master/app/src/main/res/values/arrays.xml -->
+    <!-- From: file:/home/cristian/Workspace/android-studio/medtime-master/app/src/main/res/values/arrays.xml -->
     <eat-comment/>
     <string-array name="categoriaRemedio">
         <item>Analgésico</item>
@@ -9,11 +9,12 @@
         <item>Antibiótico</item>
         <item>Antifúngico</item>
     </string-array>
-    <!-- From: file:/home/cristian/Workspace/AndroidStudioProjects/medtime-master/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/home/cristian/Workspace/android-studio/medtime-master/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/home/cristian/Workspace/AndroidStudioProjects/medtime-master/app/src/main/res/values/strings.xml -->
+    <dimen name="title_cadastra_med">24dp</dimen>
+    <!-- From: file:/home/cristian/Workspace/android-studio/medtime-master/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="Idade">Idade</string>
     <string name="Logar">Entrar</string>
@@ -26,7 +27,7 @@
     <string name="bemVindoLogado">Seja Bem Vindo(a)</string>
     <string name="btnEmergenciaHome">Discar Número Emergência</string>
     <string name="cadastrar">Cadastrar</string>
-    <string name="cadastrarMedicamento">Cadastrar Medicamento</string>
+    <string name="cadastrarMedicamento">Adicionar medicamento</string>
     <string name="cadastro">Cadastro de Usuários</string>
     <string name="cadastroProdutos">Cadastrar Medicamento</string>
     <string name="cadastroUsuario">Cadastrar Usuário</string>
@@ -36,7 +37,8 @@
     <string name="confirmar">Confirmar</string>
     <string name="confirmar_senha">Confirmação Senha: </string>
     <string name="editar_senha">Editar Senha</string>
-    <string name="escolhaEdicao">Clique no usuário para alterar password</string>
+    <string name="escolhaEdicao">Toque para alterar password</string>
+    <string name="escolhaEdicaoMed">Toque para editar</string>
     <string name="estado">Estado: </string>
     <string name="excluir">Excluir</string>
     <string name="funcao">Função: </string>
@@ -49,12 +51,14 @@
     <string name="login">CPF:</string>
     <string name="matricula">CPF: </string>
     <string name="meuPerfil">Meu Perfil</string>
+    <string name="meusMedicamentos">Meus medicamentos</string>
     <string name="nao">Não</string>
     <string name="nome">Nome: </string>
     <string name="nomeLaboratorio">Nome do Laboratório</string>
     <string name="nomeMedicamento">Nome do Medicamento </string>
     <string name="nomeprodutos">Nome: </string>
     <string name="novaSenha">Entre com a nova senha: </string>
+    <string name="novo">Sou novo aqui</string>
     <string name="numEmergencia">Número de emergência </string>
     <string name="numero">Número: </string>
     <string name="password">Senha</string>
@@ -74,6 +78,7 @@
     <string name="title_activity_cadastro">Cadastro de Usuários</string>
     <string name="title_activity_dialog">Alterar senha</string>
     <string name="title_activity_list_usuario">Usuários ativos</string>
+    <string name="title_activity_meus_medicamentos">MeusMedicamentos</string>
     <string name="title_activity_perfil">Meu Perfil</string>
     <string name="title_activity_produtos">Cadastro de Medicamento</string>
     <string name="title_activity_usuario">Area Usuário</string>
@@ -81,7 +86,7 @@
     <string name="valor">Valor: </string>
     <string name="valorRemedio">Valor: </string>
     <string name="voltar">Voltar</string>
-    <!-- From: file:/home/cristian/Workspace/AndroidStudioProjects/medtime-master/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/home/cristian/Workspace/android-studio/medtime-master/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
