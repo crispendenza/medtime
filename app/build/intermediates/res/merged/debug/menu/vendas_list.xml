@@ -7,4 +7,8 @@
         android:title="@string/action_settings"/>
 
 </menu>
+<<<<<<< HEAD
 <!-- From: file:/home/cristian/Workspace/android-studio/medtime-master/app/src/main/res/menu/vendas_list.xml -->
+=======
+<!-- From: file:/home/cristian/Workspace/AndroidStudioProjects/medtime-master/app/src/main/res/menu/vendas_list.xml -->
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670

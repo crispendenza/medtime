@@ -1,6 +1,7 @@
 package br.ufscar.dc.medtime;
 
 import android.app.Activity;
+<<<<<<< HEAD
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -176,6 +177,25 @@ public class CadastrarMedicamentoActivity extends Activity {
         }
 
         return mediaFile;
+=======
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+
+
+
+public class CadastrarMedicamentoActivity extends Activity {
+    private Button btnCadastrarMedicamento;
+    private EditText edtIdMedicamento;
+    private EditText edtNomeMedicamento;
+    private EditText edtLaboratorioMedicamento;
+    private EditText edtValorMedicamento;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_cadastrar_medicamento);
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
     }
 
 }

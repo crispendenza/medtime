@@ -19,6 +19,10 @@ public class UsuarioDAO extends DataBase {
 
 	public void insert(Usuario usuario) throws Exception {
 		ContentValues values = new ContentValues();
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
 		values.put("nome", usuario.getNome());
 		values.put("senha", usuario.getSenha());
 		values.put("matricula", usuario.getMatricula());
@@ -33,29 +37,54 @@ public class UsuarioDAO extends DataBase {
 		values.put("sexo", usuario.getSexo());
 		values.put("senha", usuario.getSenha());
 		values.put("numEmergencia", usuario.getNumEmergencia());
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
 		getDatabase().insert(TABLE, null, values);
 	}
 
 	public void update(Usuario usuario) throws Exception {
 		ContentValues values = new ContentValues();
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
 		values.put("rua", usuario.getRua());
 		values.put("bairro", usuario.getBairro());
 		values.put("numero", usuario.getNum());
 		values.put("cidade", usuario.getCidade());
 		values.put("estado", usuario.getEstado());
 		values.put("numEmergencia", usuario.getNumEmergencia());
+<<<<<<< HEAD
 		getDatabase().update(TABLE, values, "matricula = ?",
 				new String[] { "" + usuario.getMatricula() });
 	}
 	//ok
 	public Usuario findById(String matricula) {
+=======
+
+		getDatabase().update(TABLE, values, "matricula = ?",
+				new String[] { "" + usuario.getMatricula() });
+	}
+
+	public Usuario findById(String matricula) {
+
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
 		String sql = "SELECT * FROM " + TABLE + " WHERE matricula = ?";
 		String[] selectionArgs = new String[] { "" + matricula };
 		Cursor cursor = getDatabase().rawQuery(sql, selectionArgs);
 		cursor.moveToFirst();
+<<<<<<< HEAD
 		return montaUsuario(cursor);
 	}
 	//ok
+=======
+
+		return montaUsuario(cursor);
+	}
+
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
 	public ArrayList<Usuario> findAll() throws Exception {
 		ArrayList<Usuario> retorno = new ArrayList<Usuario>();
 		String sql = "SELECT * FROM " + TABLE;
@@ -87,7 +116,13 @@ public class UsuarioDAO extends DataBase {
 		usuario.setAdmin(cursor.getString(cursor.getColumnIndex("admin")));
 		usuario.setSenha(cursor.getString(cursor.getColumnIndex("senha")));
 		usuario.setNumEmergencia(cursor.getString(cursor.getColumnIndex("numEmergencia")));
+<<<<<<< HEAD
 		return usuario;
+=======
+
+		return usuario;
+
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
 	}
 
 	public Usuario findByLogin(String matricula, String senha) {
@@ -96,9 +131,15 @@ public class UsuarioDAO extends DataBase {
 		String[] selectionArgs = new String[] { matricula, senha };
 		Cursor cursor = getDatabase().rawQuery(sql, selectionArgs);
 		cursor.moveToFirst();
+<<<<<<< HEAD
 		return montaUsuario(cursor);
 	}
 
+=======
+
+		return montaUsuario(cursor);
+	}
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
 	public void updatePasswd(Usuario usuario) throws Exception {
 		ContentValues values = new ContentValues();
 

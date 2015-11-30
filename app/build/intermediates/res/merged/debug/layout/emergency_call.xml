@@ -7,4 +7,8 @@
     android:textColor="#FF000000"
     android:padding="10sp"
     android:layout_marginTop="15dp"/>
+<<<<<<< HEAD
 <!-- From: file:/home/cristian/Workspace/android-studio/medtime-master/app/src/main/res/layout/emergency_call.xml -->
+=======
+<!-- From: file:/home/cristian/Workspace/AndroidStudioProjects/medtime-master/app/src/main/res/layout/emergency_call.xml -->
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670

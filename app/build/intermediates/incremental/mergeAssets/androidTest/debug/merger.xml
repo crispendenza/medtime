@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <merger version="3"><dataSet config="main"><source path="/home/cristian/Workspace/android-studio/medtime-master/app/src/androidTest/assets"/></dataSet></merger>
+=======
+<merger version="3"><dataSet config="main"><source path="/home/cristian/Workspace/AndroidStudioProjects/medtime-master/app/src/androidTest/assets"/></dataSet></merger>
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670

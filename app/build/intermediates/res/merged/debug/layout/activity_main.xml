@@ -72,6 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:text="@string/Logar"
+<<<<<<< HEAD
         android:background="@drawable/button1"
         android:textColor="#ffffff" />
     <Button
@@ -82,6 +83,10 @@
         android:text="@string/novo"
         android:background="@drawable/button2"
         android:textColor="#606060" />
+=======
+        android:background="#8b8b8b"
+        android:textColor="#ffffff" />
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
 
     <Button
         android:id="@+id/btnEmergenciaHome"
@@ -89,9 +94,17 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:text="@string/btnEmergenciaHome"
+<<<<<<< HEAD
         android:background="@drawable/button3"
+=======
+        android:background="#fd0000"
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
         android:textColor="#ffffff"
         android:layout_weight="0.21" />
 
 </LinearLayout>
+<<<<<<< HEAD
 <!-- From: file:/home/cristian/Workspace/android-studio/medtime-master/app/src/main/res/layout/activity_main.xml -->
+=======
+<!-- From: file:/home/cristian/Workspace/AndroidStudioProjects/medtime-master/app/src/main/res/layout/activity_main.xml -->
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670

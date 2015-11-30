@@ -34,7 +34,11 @@
                     android:src="@drawable/feminino" />
 
                 <TextView
+<<<<<<< HEAD
                     android:id="@+id/tvWelcomeGerenciar"
+=======
+                    android:id="@+id/textView"
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/bemVindoLogado" />
@@ -44,29 +48,43 @@
                 android:id="@+id/btnCadastroUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+<<<<<<< HEAD
                 android:text="@string/cadastroUsuario"
                 android:background="@drawable/button1"
                 android:layout_marginTop="5dp"
                 android:textColor="#ffffff" />
+=======
+                android:text="@string/cadastroUsuario" />
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
 
             <Button
                 android:id="@+id/btnListarUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+<<<<<<< HEAD
                 android:text="@string/listarUsuario"
                 android:background="@drawable/button1"
                 android:layout_marginTop="5dp"
                 android:textColor="#ffffff" />
+=======
+                android:text="@string/listarUsuario" />
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
 
 
             <Button
                 android:id="@+id/btnSair"
+<<<<<<< HEAD
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/voltar"
                 android:background="@drawable/button3"
                 android:layout_marginTop="5dp"
                 android:textColor="#ffffff" />
+=======
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/voltar" />
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
         </LinearLayout>
     </ScrollView>
 

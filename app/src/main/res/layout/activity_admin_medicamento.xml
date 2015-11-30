@@ -37,7 +37,11 @@
                     android:src="@drawable/feminino" />
 
                 <TextView
+<<<<<<< HEAD
                     android:id="@+id/tvWelcomeMed"
+=======
+                    android:id="@+id/textView"
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/bemVindoLogado" />
@@ -48,6 +52,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
+<<<<<<< HEAD
                 android:text="@string/cadastrarMedicamento"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/button1"
@@ -72,6 +77,27 @@
                 android:background="@drawable/button3"
                 android:layout_marginBottom="5dp"
                 android:textColor="#ffffff" />
+=======
+                android:text="@string/cadastrarMedicamento" />
+
+<!--            <Button
+                android:id="@+id/btnGerenciarMedicamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gerenciarMedicamento" />-->
+
+            <Button
+                android:id="@+id/btnGerenciarAlarme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gerenciarAlarme" />
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/voltar" />
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
         </LinearLayout>
     </ScrollView>
 

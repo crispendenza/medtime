@@ -6,7 +6,11 @@
         jumboMode="false"
         revision="23.0.2"
         sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+<<<<<<< HEAD
         <dex dex="/home/cristian/Workspace/android-studio/medtime-master/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-a7705d012dc14c47f99d6e26a128b5bd8cacec73.jar" />
+=======
+        <dex dex="/home/cristian/Workspace/AndroidStudioProjects/medtime-master/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-a7705d012dc14c47f99d6e26a128b5bd8cacec73.jar" />
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
     </item>
 
 </items>

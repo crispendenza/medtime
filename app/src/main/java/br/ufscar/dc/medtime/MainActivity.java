@@ -32,7 +32,10 @@ public class MainActivity extends Activity {
     private EditText editMatricula, editSenha;
     private Button btnLogin;
     private Button btnEmergency;
+<<<<<<< HEAD
     private Button btnNovo;
+=======
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
     private Context context;
     private UsuarioControle usuarioController;
     private AlertDialog.Builder alert;
@@ -79,6 +82,7 @@ public class MainActivity extends Activity {
             }
         });
 
+<<<<<<< HEAD
         btnNovo = (Button) findViewById(R.id.btnCadastroMain);
         btnNovo.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
@@ -92,6 +96,8 @@ public class MainActivity extends Activity {
             }
         });
 
+=======
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
         btnEmergency = (Button) findViewById(R.id.btnEmergenciaHome);
         btnEmergency.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -134,6 +140,14 @@ public class MainActivity extends Activity {
         alerta = builder.create(); alerta.show();
     }
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
     /**
      * @throws Exception
      */
@@ -141,12 +155,20 @@ public class MainActivity extends Activity {
         if (usuarioController.findAll().isEmpty()) {
             Log.i("PDMInicializa", usuarioController.findAll().toString());
 
+<<<<<<< HEAD
             usuario.setMatricula("32643905822");
+=======
+            usuario.setMatricula("admin");
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
             usuario.setNome("Cristian Pendenza");
             usuario.setSenha("123");
             usuario.setFuncao("Paciente");
             usuario.setRua("Padre Faustino");
+<<<<<<< HEAD
             usuario.setIdade(30);
+=======
+            usuario.setIdade(18);
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
             usuario.setBairro("Jardim Bandeirantes");
             usuario.setCidade("São Carlos");
             usuario.setNum(90);
@@ -155,7 +177,11 @@ public class MainActivity extends Activity {
             usuario.setSexo("masculino");
             usuario.setNumEmergencia("14981268600");
             usuarioController.insert(usuario);
+<<<<<<< HEAD
             Log.i("Criando usuario default", "cpf usuario " + usuario.getMatricula());
+=======
+            Log.i("PDM", "matricula usuario" + usuario.getMatricula());
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
         }
     }
 

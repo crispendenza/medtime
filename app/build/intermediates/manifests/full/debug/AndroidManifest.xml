@@ -12,7 +12,10 @@
     <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
+<<<<<<< HEAD
     <uses-permission android:name="android.permission.CAMERA" />
+=======
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
@@ -73,6 +76,7 @@
             android:name="br.ufscar.dc.medtime.CadastrarMedicamentoActivity"
             android:label="@string/title_activity_cadastrar_medicamento" >
         </activity>
+<<<<<<< HEAD
         <activity
             android:name="br.ufscar.dc.medtime.MeusMedicamentosActivity"
             android:label="@string/title_activity_meus_medicamentos"
@@ -81,6 +85,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="br.ufscar.dc.medtime.AdminMedicamentoActivity" />
         </activity>
+=======
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
     </application>
 
 </manifest>

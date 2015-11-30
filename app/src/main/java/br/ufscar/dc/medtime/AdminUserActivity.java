@@ -11,7 +11,10 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+<<<<<<< HEAD
 import android.widget.TextView;
+=======
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
 
 public class AdminUserActivity extends Activity {
 
@@ -21,7 +24,10 @@ public class AdminUserActivity extends Activity {
     private Button btnVoltar;
     private Bundle params;
     private Button btnListarUsuario;
+<<<<<<< HEAD
     private TextView tvNome;
+=======
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,9 +35,12 @@ public class AdminUserActivity extends Activity {
         setContentView(R.layout.activity_admin_user);
         Intent intent = getIntent();
         params = intent.getExtras();
+<<<<<<< HEAD
         tvNome = (TextView) findViewById(R.id.tvWelcomeGerenciar);
         tvNome.setText("Olá " + params.getString("nome"));
 
+=======
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
         this.imgAvatar = (ImageView) findViewById(R.id.imageAvatar);
         if (params != null) {
             escolherAvatar(params.getString("sexo"));
@@ -41,7 +50,10 @@ public class AdminUserActivity extends Activity {
         btnCadastrarUsuario.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(AdminUserActivity.this, CadastroActivity.class);
+<<<<<<< HEAD
                 intent.putExtras(params);
+=======
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
                 startActivity(intent);
             }
         });
@@ -56,10 +68,14 @@ public class AdminUserActivity extends Activity {
 
         btnVoltar = (Button) findViewById(R.id.btnSair);
         btnVoltar.setOnClickListener(new View.OnClickListener() {
+<<<<<<< HEAD
             public void onClick(View v) {
                 finish();
             }
         });
+=======
+            public void onClick(View v) { finish(); }});
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
 
     }
 
@@ -76,6 +92,15 @@ public class AdminUserActivity extends Activity {
         }
     }
 
+<<<<<<< HEAD
+=======
+    public Bundle retornarParametros() {
+        Bundle params1 = new Bundle();
+        params1.putString("matricula", params.getString("matricula"));
+        params1.putString("nome", params.getString("nome"));
+        return params1;
+    }
+>>>>>>> 8c37b46ae70314dbc59ebcac4e41f59542122670
 
 
 }
